@@ -1,0 +1,7 @@
+{
+  "name": "htApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
