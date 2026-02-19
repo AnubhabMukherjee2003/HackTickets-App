@@ -69,7 +69,7 @@ const Tab3: React.FC = () => {
               <IonCard className="admin-panel-card">
                 <IonCardContent>
                   <p className="admin-panel-hint">Access the full admin panel in a browser:</p>
-                  <code className="admin-url">http://localhost:3000/admin</code>
+                  <code className="admin-url">{`${import.meta.env.VITE_API_URL || 'https://hack-tickets-backend.vercel.app'}/admin`}</code>
                   <p className="admin-panel-hint">Features: event management, QR scanner, ticket control</p>
                 </IonCardContent>
               </IonCard>

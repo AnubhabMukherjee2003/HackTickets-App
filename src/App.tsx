@@ -11,12 +11,13 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { gridOutline, ticketOutline, personOutline } from 'ionicons/icons';
+import { gridOutline, ticketOutline, personOutline, bugOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Login from './pages/Login';
 import BookTicket from './pages/BookTicket';
+import DebugConsole from './pages/DebugConsole';
 import { AuthProvider } from './contexts/AuthContext';
 
 /* Core CSS required for Ionic components to work properly */
@@ -54,6 +55,7 @@ const App: React.FC = () => (
             <Route exact path="/tab1"><Tab1 /></Route>
             <Route exact path="/tab2"><Tab2 /></Route>
             <Route path="/tab3"><Tab3 /></Route>
+            <Route exact path="/debug"><DebugConsole /></Route>
 
             {/* Auth + booking pages (outside tabs, no tab bar) */}
             <Route exact path="/login"><Login /></Route>
@@ -75,6 +77,10 @@ const App: React.FC = () => (
             <IonTabButton tab="tab3" href="/tab3">
               <IonIcon icon={personOutline} />
               <IonLabel>Profile</IonLabel>
+            </IonTabButton>
+            <IonTabButton tab="debug" href="/debug">
+              <IonIcon icon={bugOutline} />
+              <IonLabel>Debug</IonLabel>
             </IonTabButton>
           </IonTabBar>
         </IonTabs>
