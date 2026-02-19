@@ -1,0 +1,56 @@
+.events-search {
+  padding: 8px 8px 0;
+}
+
+.events-loading,
+.events-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 12px;
+  color: var(--ion-color-medium);
+}
+
+.events-empty ion-icon { font-size: 64px; opacity: 0.4; }
+
+.events-list { padding: 8px 12px 80px; }
+
+.event-card {
+  border-radius: 14px !important;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
+}
+
+.event-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.event-name { font-size: 17px !important; font-weight: 600 !important; flex: 1; }
+
+.event-details { margin-bottom: 12px; }
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: var(--ion-color-medium-shade);
+}
+
+.detail-row ion-icon { font-size: 16px; color: var(--ion-color-primary); flex-shrink: 0; }
+
+.event-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.price-chip { --background: rgba(var(--ion-color-secondary-rgb), 0.15); }
+.book-btn { --border-radius: 8px; }

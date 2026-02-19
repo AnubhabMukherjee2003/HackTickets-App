@@ -1,0 +1,220 @@
+.book-content {
+  --background: #f4f5f8;
+}
+
+.book-loading,
+.processing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+  padding: 32px;
+  text-align: center;
+}
+
+.processing-container ion-progress-bar {
+  width: 240px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.book-container {
+  padding: 16px;
+}
+
+.event-summary-card,
+.payment-card {
+  border-radius: 16px !important;
+  margin-bottom: 16px;
+}
+
+.event-meta {
+  margin: 8px 0 16px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--ion-color-medium-shade);
+}
+
+.meta-row ion-icon {
+  font-size: 18px;
+  color: var(--ion-color-primary);
+  flex-shrink: 0;
+}
+
+.price-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-top: 8px;
+}
+
+.price-label { font-size: 14px; opacity: 0.85; }
+.price-value { font-size: 22px; font-weight: 700; }
+.price-sub { font-size: 11px; opacity: 0.7; }
+
+.proceed-btn { --border-radius: 12px; height: 50px; }
+
+/* Payment */
+.payment-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.payment-header ion-icon { font-size: 22px; color: var(--ion-color-primary); }
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.pay-input { margin-bottom: 8px; }
+
+.pay-row {
+  display: flex;
+  gap: 8px;
+}
+.pay-row .half { flex: 1; }
+
+.pay-btn {
+  margin-top: 20px;
+  --border-radius: 12px;
+  height: 50px;
+}
+
+.pay-error { font-size: 13px; padding: 4px 8px; }
+
+.pay-disclaimer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--ion-color-medium);
+  margin-top: 12px;
+}
+
+/* Success */
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 72px;
+  color: var(--ion-color-success);
+  margin-bottom: 12px;
+}
+
+.success-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.success-container > p {
+  color: var(--ion-color-medium);
+  margin-bottom: 20px;
+}
+
+.ticket-card {
+  width: 100%;
+  border-radius: 16px !important;
+  margin-bottom: 16px;
+}
+
+.ticket-meta {
+  font-size: 13px;
+  color: var(--ion-color-medium);
+  margin: 4px 0 0;
+}
+
+.ticket-info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.qr-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 12px;
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  border: 3px solid var(--ion-color-primary);
+  border-radius: 12px;
+  padding: 6px;
+  background: white;
+}
+
+.qr-hint {
+  font-size: 12px;
+  color: var(--ion-color-medium);
+  margin-top: 8px;
+}
+
+.tx-hash {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--ion-color-medium);
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.view-tickets-btn {
+  width: 100%;
+  --border-radius: 12px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.qr-url-box {
+  margin-top: 12px;
+  background: #f4f5f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: left;
+}
+.qr-url-label {
+  font-size: 11px;
+  color: var(--ion-color-medium);
+  font-weight: 600;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.qr-url-text {
+  font-size: 11px;
+  font-family: monospace;
+  color: #0f3460;
+  word-break: break-all;
+  margin: 0;
+  user-select: all;
+  -webkit-user-select: all;
+}
